@@ -1,0 +1,28 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh15420\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 Documentaci\'f3n de la librer\'eda: reactivex.io\
+\
+Operadores RxJS:\
+	- map \'97> transforma la informaci\'f3n obtenida de un observable en otro observable que emite esos valores transformados\
+	- shareReplay() \'97> Evita m\'faltiple llamadas a la api, compartiendo la informaci\'f3n obtenida en la suscripci\'f3n de un observable.\
+	- tap() \'97> Se utiliza para ver efectos secundarios en un observable.\
+	- concat() \'97> Concatena varios observables\
+	- concatMap() \'97> Concatena observables solo cuando cada uno de estos van finalizando.\
+	- fromPromise(\'85) \'97> Convierte la promesa que se pasa por argumentos en un observable\
+	- fromEvent (\'85) \'97> Convierte un evento en un observable\
+	- merge() \'97> Une los observables de manera concurrente\
+	- mergeMap \'97> Idem pero con colecciones de observables\
+	- exhaustMap \'97> ver en doc\
+	- debounceTime \'97> Act\'faa como un Delay, espera un tiempo determinado para emitir un observable\
+	- distinctUntilChange() \'97> Evita duplicados en la salida de un observable\
+	-switchMap() \'97>\
+\
+\
+IMPORTANTE!\
+Es importante no agregar mucha l\'f3gica dentro de los suscribe(\'85) este dise\'f1o es imperativo, poco eficiente, genera callback halls y no se recomienda.\
+Para ello es importante trabajar con programaci\'f3n declarativa, creando observables y suscribiendo con el pie async cuando sea necesario.}
